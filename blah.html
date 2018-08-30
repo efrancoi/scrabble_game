@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker! I'm Edwin</h1>
+    <input type="text" id="input"/>
+    <button type="button" id="action">Click Me</button>
+    <p id="output">This is a paragraph</p>
+    <script>
+      document.getElementById('action').addEventListener(
+        'click', 
+      function(){
+        alert("ahh");
+      }
+      );
+      document.getElementById('output').addEventListener(
+        "mouseover",
+        function(){
+          var bob = document.querySelector('#output');
+          bob.innerHTML = "bob";
+        })
+    </script>
+  </body>
+
+</html>
